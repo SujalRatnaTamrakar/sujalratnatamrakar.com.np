@@ -1,16 +1,18 @@
+# My Personal Portfolio
+> A Fully Responsive HTML5 Bootstrap Template
+> DESIGNED & DEVELOPED by FreeHTML5.co
 
-TITLE: 
-Profile - 100% Fully Responsive Free HTML5 Bootstrap Template
+> https://sujalratnatamrakar.github.io/
 
-AUTHOR:
-DESIGNED & DEVELOPED by FreeHTML5.co
+### Website Preview
+<p align="center">
+  <kbd>
+    <a href="https://sujalratnatamrakar.github.io/" target="_blank"><img src="examples/preview.gif">
+  </a>
+  </kbd>
+</p>
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
-
-
-CREDITS:
+## Credits
 
 Bootstrap
 http://getbootstrap.com/
@@ -51,6 +53,14 @@ http://www.owlcarousel.owlgraphic.com/
 EasyPieChart
 https://github.com/rendro/easy-pie-chart
 
-Demo Images:
-http://unsplash.com
 
+## Sections
+✔️ About me\
+✔️ My Resume\
+✔️ My Services \
+✔️ Skills \
+✔️ Work\
+✔️ Hire Me!\
+✔️ Contact
+
+To view a live example, **[click here](www.sujalratnatamrakar.com.np)**
