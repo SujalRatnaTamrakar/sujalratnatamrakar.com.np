@@ -14,43 +14,52 @@
 
 ## Credits
 
-Bootstrap
+> Bootstrap
+
 http://getbootstrap.com/
 
-jQuery
+> jQuery
+
 http://jquery.com/
 
-jQuery Easing
+> jQuery Easing
+
 http://gsgd.co.uk/sandbox/jquery/easing/
 
-Modernizr
+> Modernizr
+
 http://modernizr.com/
 
-Google Fonts
+> Google Fonts
+
 https://www.google.com/fonts/
 
-Google Map
-http://maps.google.com/
+> Icomoon
 
-Icomoon
 https://icomoon.io/app/
 
-Respond JS
+> Respond JS
+
 https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
 
-animate.css
+> animate.css
+
 http://daneden.me/animate
 
-jQuery Waypoint
+> jQuery Waypoint
+
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
-Stellar Parallax
+> Stellar Parallax
+
 http://markdalgleish.com/projects/stellar.js/
 
-jQuery countTo
+> jQuery countTo
+
 http://www.owlcarousel.owlgraphic.com/
 
-EasyPieChart
+> EasyPieChart
+
 https://github.com/rendro/easy-pie-chart
 
 
