@@ -4,7 +4,7 @@ $font-secondary: 'Kaushan Script', cursive;
 
 
 // Overrides
-$grid-gutter-width: 40px !default; 
+$grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
@@ -56,16 +56,16 @@ $form-group-margin-bottom:       30px !default;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -80,7 +80,7 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -92,10 +92,10 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -104,7 +104,7 @@ $form-group-margin-bottom:       30px !default;
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 
@@ -123,9 +123,9 @@ body {
 	height: 100%;
 	@include transition(.5s);
 	.offcanvas & {
-		overflow: hidden;	
+		overflow: hidden;
 		position: absolute;
-		
+
 		&:after {
 			@include transition(2s);
 			position: absolute;
@@ -173,8 +173,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#fh5co-header,
-.fh5co-cover {
+#portfolio-header,
+.portfolio-cover {
 	background-color: transparent;
 	background-size: cover;
 	background-attachment: fixed;
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			// border: 1px solid rgba($brand-white,1);
 			@include border-radius(50%);
 		}
-		.fh5co-social-icons {
+		.portfolio-social-icons {
 			li {
 				a {
 					color: $brand-white;
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#fh5co-features {
+#portfolio-features {
 	background: $brand-primary;
 	h2 {
 		color: $brand-white;
@@ -347,32 +347,32 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#fh5co-about,
-#fh5co-resume,
-#fh5co-skills,
-#fh5co-started,
-#fh5co-work,
-#fh5co-blog,
-#fh5co-pricing,
-#fh5co-contact{
+#portfolio-about,
+#portfolio-resume,
+#portfolio-skills,
+#portfolio-started,
+#portfolio-work,
+#portfolio-blog,
+#portfolio-pricing,
+#portfolio-contact{
 	padding: 7em 0;
 	clear: both;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
 }
-#fh5co-started{
+#portfolio-started{
 	border-bottom: none;
 }
 
-.fh5co-bg-color{
+.portfolio-bg-color{
 	// background: #233142;
 
 }
-.fh5co-bg-dark{
+.portfolio-bg-dark{
 	background: $brand-bg-dark;
 	background: $brand-primary;
-	.fh5co-heading{
+	.portfolio-heading{
 		h2{
 			color: $brand-white !important;
 		}
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		margin-bottom: 3em;
 	}
 	li{
-		width: 100%;
+		width: 105%;
 		float: left;
 		list-style: none;
 		padding: 10px 0;
@@ -411,7 +411,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
-.fh5co-social-icons {
+.portfolio-social-icons {
 	margin: 0;
 	padding: 0;
 	li {
@@ -431,8 +431,8 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
-#fh5co-about{
-	.fh5co-social-icons {
+#portfolio-about{
+	.portfolio-social-icons {
 		margin: 0;
 		padding: 0;
 		li {
@@ -457,9 +457,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-.fh5co-heading {
+.portfolio-heading {
 	margin-bottom: 5em;
-	&.fh5co-heading-sm {
+	&.portfolio-heading-sm {
 		margin-bottom: 2em;
 	}
 	h2 {
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		margin-bottom: 20px;
 		position: relative;
 		@media screen and (max-width: $screen-sm) {
-			margin-bottom: 4em;	
+			margin-bottom: 4em;
 		}
 		&:before, &:after{
 			content: " ";
@@ -755,7 +755,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	@media screen and(max-width: $screen-xs){
 		height: 270px;
-	}	
+	}
 	.desc{
 		display: table-cell;
 		vertical-align: middle;
@@ -807,14 +807,14 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
-#fh5co-started {
+#portfolio-started {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
 	float: left;
 	width: 100%;
-	.fh5co-heading {
+	.portfolio-heading {
 		margin-bottom: 0;
 		h2 {
 			color: $brand-white;
@@ -842,7 +842,7 @@ h1, h2, h3, h4, h5, h6, figure {
 //PRICING
 
 // BLOG
-.fh5co-blog{
+.portfolio-blog{
 	width: 100%;
 	float: left;
 	margin-bottom: 40px;
@@ -932,7 +932,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#fh5co-consult{
+#portfolio-consult{
 	@include flex();
 	@include flexwrap();
 	width: 100%;
@@ -965,7 +965,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 	}
 }
-.fh5co-video {
+.portfolio-video {
 	overflow: hidden;
 	@media screen and (max-width: $screen-md){
 		height: 450px;
@@ -982,7 +982,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-#fh5co-footer {
+#portfolio-footer {
 	padding: 50px 0;
 	float: left;
 	width: 100%;
@@ -1015,7 +1015,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		a{
 			color: $brand-black;
 		}
-		
+
 	}
 }
 .form-control {
@@ -1027,10 +1027,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	border: none;
 	border: 2px solid rgba(0,0,0,.1);
 	font-size: 18px;
-	
+
 	font-weight: 300;
 	@include border-radius(4px);
-	
+
 	&:focus, &:active {
 		box-shadow: none;
 		border: 2px solid rgba(0,0,0,.8);
@@ -1085,7 +1085,7 @@ input[type="text"] {
 			text-decoration: none;
 			outline: none;
 		}
-	}	
+	}
 }
 
 
@@ -1264,7 +1264,7 @@ input[type="text"] {
    margin: 0px !important;
 }
 
-.fh5co-loader {
+.portfolio-loader {
 	position: fixed;
 	left: 0px;
 	top: 0px;
