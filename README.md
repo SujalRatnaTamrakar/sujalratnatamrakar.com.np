@@ -72,4 +72,4 @@ https://github.com/rendro/easy-pie-chart
 ✔️ Hire Me!\
 ✔️ Contact
 
-To view a live example, **[click here](www.sujalratnatamrakar.com.np)**
+To view a live example, **[click here](https://sujalratnatamrakar.github.io/)**
