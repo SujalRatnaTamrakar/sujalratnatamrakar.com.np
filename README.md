@@ -7,8 +7,7 @@
 ### Website Preview
 <p align="center">
   <kbd>
-    <a href="https://sujalratnatamrakar.github.io/" target="_blank"><img src="examples/preview.gif">
-  </a>
+    <a href="https://sujalratnatamrakar.github.io/" target="_blank">Preview
   </kbd>
 </p>
 
