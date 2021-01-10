@@ -55,6 +55,18 @@ function closeList(){
   }
 };
 
+$(window).on('resize',_.debounce(function(){
+  var win = $(this); //this = window
+  if (win.width() >= 1080) {
+    console.log(">1080");
+    $("#wrapper").animate({
+      left: '0px'
+      });
+    $('.navTrigger').removeClass('active');
+    $('#mainListDiv').removeClass("open show_list");
+    }
+},50));
+
 AOS.init();
 
 var pieChart = function() {
