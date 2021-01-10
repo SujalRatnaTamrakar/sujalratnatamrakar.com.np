@@ -1,71 +1,124 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile &mdash; Sujal Ratna Tamrakar</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-	<!-- Google apis -->
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sujal Ratna Tamrakar - Portfolio</title>
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Space+Mono&display=swap" rel="stylesheet">
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+  <!-- Theme -->
+  <link rel="stylesheet" href="css/styles.css">
 
-	</head>
-	<body>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-	<div class="portfolio-loader"></div>
+  <!-- FontAwesome [<!-- TODO: If less icons just delete this -->
+  <link href="fontawesome/css/all.css" rel="stylesheet">
 
-	<div id="page">
-	<header id="portfolio-header" class="portfolio-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/avatar.png);"></div>
-							<h1><span>Sujal Ratna Tamrakar</span></h1>
-							<p>
-								<ul class="portfolio-social-icons">
-									<!-- <li><a href="#"><i class="icon-twitter2"></i></a></li> -->
-									<li><a href="https://www.facebook.com/sujalratnatamrakar/"><i class="icon-facebook2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/sujalratnatamrakar/"><i class="icon-linkedin2"></i></a></li>
-									<!-- <li><a href="#"><i class="icon-dribbble2"></i></a></li> -->
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+  <!-- LineAwesome-->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-	<div id="portfolio-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+
+
+
+
+  <!-- PORTFOLIO-LANDING -->
+
+  <section class="colored-section" id="portfolio-landing">
+      <header id="portfolio-header" class="portfolio-cover" >
+    		<div class="overlay">
+        </div>
+    			<div class="row landing-row">
+
+            <!-- NAV BAR -->
+
+                      <div class="container-fluid nav-container">
+                      <nav class="nav navbar-expand-lg">
+                            <div class="container-fluid">
+                                <div class="logo">
+                                    <a href="#portfolio-landing"><img class="my-logo" src="images/my-logo.png"></a>
+                                </div>
+                                <div id="mainListDiv" class="main_list">
+                                    <ul class="navlinks">
+                                        <li><a onclick="closeList()" href="#about-me">About Me</a></li>
+                                        <li><a onclick="closeList()" href="#resume">My Resume</a></li>
+                                        <li><a onclick="closeList()" href="#services">Services</a></li>
+                                        <li><a onclick="closeList()" href="#projects">Projects</a></li>
+                                        <li><a onclick="closeList()" href="#contact">Contact</a></li>
+
+                                    </ul>
+                                </div>
+                                <span class="navTrigger">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                            </div>
+                        </nav>
+                      </div>
+            <!-- NAVBAR ENDS -->
+
+
+            <div class="vertical-centre">
+
+
+
+    				<div class="col-md-8 offset-md-2 text-center">
+
+
+
+              <div class="display-t">
+    						<div class="display-tc animate__animated animate__fadeIn animate__slow " data-aos="fade-up" data-animate-effect="animate__fadeIn">
+    							<div class="profile-thumb" style="background: url(images/avatar.png);">
+                  </div>
+    							<h1><span>Sujal Ratna Tamrakar</span></h1>
+    							<p>
+    								<ul class="portfolio-social-icons">
+    									<li><a href="https://www.facebook.com/sujalratnatamrakar/"><i class="fab fa-facebook-square"></i></a></li>
+    									<li><a href="https://www.linkedin.com/in/sujalratnatamrakar/"><i class="fab fa-linkedin"></a></i></li>
+    								</ul>
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+
+            </div>
+
+
+    			</div>
+    	</header>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+
+  <section class="white-section" id="about-me">
+    <div class="container container-padding">
+			<div class="row" data-aos="fade-up">
+				<div class="col-md-8 offset-md-2 text-center portfolio-heading">
 					<h2>About Me</h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row about-me-detail-row" data-aos="fade-up">
+				<div class="col-md-5">
 					<ul class="info">
 						<li><span class="first-block">Full Name:</span><span class="second-block">Sujal Ratna Tamrakar</span></li>
 						<li><span class="first-block">Phone:</span><span class="second-block">+9779808658153</span></li>
@@ -74,25 +127,25 @@
 						<li><span class="first-block">Address:</span><span class="second-block">19 Yetkha Bahal, Kathmandu , Nepal</span></li>
 					</ul>
 				</div>
-				<div class="col-md-8 about-me-detail">
+				<div class="col-md-6 about-me-detail" data-aos="fade-up">
 					<h2 >Hello There!</h2>
 					<p>Let me introduce myself ! My name is Sujal Ratna Tamrakar. Currently I'm studying Bachelors in Computer Science and Information Technology. I love designing and I'm greatly interested in Graphic Designing , Software designing and development , Web designing and development, App designing and development.</p>
 					<p>
 						<ul class="portfolio-social-icons">
-							<!-- <li><a href="#"><i class="icon-twitter2"></i></a></li> -->
-							<li><a href="https://www.facebook.com/sujalratnatamrakar/"><i class="icon-facebook2"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/sujalratnatamrakar/"><i class="icon-linkedin2"></i></a></li>
-							<!-- <li><a href="#"><i class="icon-dribbble2"></i></a></li> -->
-						</ul>
+              <li><a href="https://www.facebook.com/sujalratnatamrakar/"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sujalratnatamrakar/"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
 					</p>
 				</div>
 			</div>
 		</div>
-	</div>
+  </section>
 
-	<div id="portfolio-resume" class="portfolio-bg-color">
-		<div class="container">
-			<div class="row animate-box">
+  <!-- MY RESUME SECTION -->
+
+  <section class="white-section" id="resume">
+    <div class="container container-padding">
+			<div class="row flex-center" data-aos="fade-up">
 				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
 					<h2>My Resume</h2>
 				</div>
@@ -100,11 +153,11 @@
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
+						<li class="timeline-heading text-center " data-aos="fade-up">
 							<div><h3>Education</h3></div>
 						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+						<li class="timeline-inverted " data-aos="fade-up">
+							<div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">School Leaving Certificate (SLC) </h3>
@@ -116,8 +169,8 @@
 							</div>
 						</li>
 						<br>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+						<li class="timeline-unverted" data-aos="fade-up">
+							<div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Higher Secondary Education Board (+2) </h3>
@@ -128,8 +181,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+						<li class="timeline-inverted " data-aos="fade-up">
+							<div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Bachelor's Degree (Computer Science and Information Technology)</h3>
@@ -141,11 +194,11 @@
 							</div>
 						</li>
 
-						<li class="timeline-heading text-center animate-box">
+						<li class="timeline-heading text-center " data-aos="fade-up">
 							<div><h3>Work Experience</h3></div>
 						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+						<li class="timeline-unverted" data-aos="fade-up">
+							<div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Image Annotator</h3>
@@ -163,94 +216,96 @@
 			    	</ul>
 				</div>
 			</div>
-		</div>
-	</div>
+  </section>
+
+  <!-- MY SERVICES SECTION -->
+
+  <section class="colored-section" id="services">
+  		<div class="container">
+  			<div class="services-padding">
+  				<div class="row flex-center">
+  					<div class="col-md-8 col-md-offset-2 services-heading" data-aos="fade-up">
+  						<h2>My Services</h2>
+  					</div>
+  				</div>
+  				<div class="row flex-center">
+
+  					<div class="col-md-4 text-center" data-aos="fade-up">
+  						<div class="feature-left">
+  							<span class="icon">
+  								<i class="las la-brush"></i>
+  							</span>
+  							<div class="feature-copy">
+  								<h3>Web Design</h3>
+  								<p>Design the visual aspects of a webpage i.e. UI/UX of a webpage</p>
+  							</div>
+  						</div>
+  					</div>
+
+  					<div class="col-md-4 text-center" data-aos="fade-up">
+  						<div class="feature-left">
+  							<span class="icon">
+  								<i class="las la-chart-bar"></i>
+  							</span>
+  							<div class="feature-copy">
+  								<h3>Web Development</h3>
+  								<p>Develop an efficient UI/UX friendly website.</p>
+  							</div>
+  						</div>
+  					</div>
 
 
-	<div id="portfolio-features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
-						<h2>My Services</h2>
-					</div>
-				</div>
-				<div class="row">
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-paintbrush"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Design</h3>
-								<p>Design the visual aspects of a webpage i.e. UI/UX of a webpage</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-bargraph"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Development</h3>
-								<p>Develop a UI/UX friendly website.</p>
-							</div>
-						</div>
-					</div>
+  					<div class="col-md-4 text-center" data-aos="fade-up">
+  						<div class="feature-left">
+  							<span class="icon">
+  								<i class="las la-terminal"></i>
+  							</span>
+  							<div class="feature-copy">
+  								<h3>Backend development</h3>
+  								<p>Develop a backend system using node.js</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
 
 
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-terminal"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Backend development</h3>
-								<p>Develop a backend system using node.js</p>
-							</div>
-						</div>
-					</div>
-				</div>
+  				<div class="row flex-center" data-aos="fade-up">
+  					<div class="col-md-4 text-center">
+  						<div class="feature-left">
+  							<span class="icon">
+  								<i class="las la-mobile"></i>
+  							</span>
+  							<div class="feature-copy">
+  								<h3>Android app development</h3>
+  								<p>Design and develop an Android application using JAVA</p>
+  							</div>
+  						</div>
+  					</div>
 
+  					<div class="col-md-4 text-center" data-aos="fade-up">
+  						<div class="feature-left">
+  							<span class="icon">
+  								<i class="las la-pen-fancy"></i>
+  							</span>
+  							<div class="feature-copy">
+  								<h3>Graphic Designing</h3>
+  								<p>Design visually appealing content using typography, iconography and illustrations</p>
+  							</div>
+  						</div>
 
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-android"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Android app development</h3>
-								<p>Design and develop an Android application using JAVA</p>
-							</div>
-						</div>
-					</div>
+  					</div>
 
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-pencil"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Graphic Designing</h3>
-								<p>Design visually appealing content using typography, iconography and illustrations</p>
-							</div>
-						</div>
+  				</div>
+  			</div>
+  		</div>
+  </section>
 
-					</div>
+  <!-- SKILLS SECTION -->
 
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="portfolio-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
+  <section class="white-section" id="skills">
+    <div class="container container-padding">
+			<div class="row flex-center">
+				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading" data-aos="fade-up">
 					<h2>Skills</h2>
 				</div>
 			</div>
@@ -280,7 +335,7 @@
 					<div class="chart" data-percent="70"><span><strong>Java</strong>70%</span></div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row skills-bar" data-aos="fade-up">
 				<div class="col-md-6">
 					<div class="progress-wrap">
 						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">75%</span></h3>
@@ -351,62 +406,63 @@
 				</div>
 			</div>
 		</div>
-	</div>
+  </section>
 
-	<div id="portfolio-work" class="portfolio-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
-					<h2>Projects</h2>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/project1.png);">
-						<div class="desc">
-							<h3>Bus Navigation System</h3>
-							<span>Android application</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center col-padding animate-box">
-					<a href="project2.html" class="work" style="background-image: url(images/project2.png);">
-						<div class="desc">
-							<h3>Simple portfolio</h3>
-							<span>Webpage</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center col-padding animate-box">
-					<a href="project3.html" class="work" style="background-image: url(images/project3.png);">
-						<div class="desc">
-							<h3>Product Landing Page</h3>
-							<span>Webpage</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- PROJECTS SECTION -->
 
-	<div id="portfolio-started" class="portfolio-bg-dark">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
-					<h2>Hire Me!</h2>
-					<p>I've something to bring to the table regarding anything from Web design/development and Android app design/development with a sprinkle of graphic designing! </p>
-					<p><a href="#portfolio-consult" class="btn btn-default btn-lg">Contact Me</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <section class="colored-section" id="projects">
+  		<div class="container container-padding">
+  			<div class="row  flex-center">
+  				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading" data-aos="fade-up">
+  					<h2>Projects</h2>
+  				</div>
+  			</div>
+  			<div class="row text-center" data-aos="fade-up">
+  				<div class="col-md-4 text-center col-padding ">
+  					<a href="#" class="project" style="background-image: url(images/project1.png);">
+  						<div class="desc">
+  							<h3>Bus Navigation System</h3>
+  							<span>Android application</span>
+  						</div>
+  					</a>
+  				</div>
+  				<div class="col-md-4 text-center col-padding ">
+  					<a href="project2.html" class="project" style="background-image: url(images/project2.png);">
+  						<div class="desc">
+  							<h3>Simple portfolio</h3>
+  							<span>Webpage</span>
+  						</div>
+  					</a>
+  				</div>
+  				<div class="col-md-4 text-center col-padding ">
+  					<a href="project3.html" class="project" style="background-image: url(images/project3.png);">
+  						<div class="desc">
+  							<h3>Product Landing Page</h3>
+  							<span>Webpage</span>
+  						</div>
+  					</a>
+  				</div>
+  			</div>
 
-	<div id="portfolio-consult">
-		<div class="video portfolio-video" style="background-image: url(images/contact-me.png);">
+        <div class="row  flex-center" id="hire-me" data-aos="fade-up">
+  				<div class="col-md-8 col-md-offset-2 text-center portfolio-heading">
+  					<h2>Hire Me!</h2>
+  					<p>I've something to bring to the table regarding anything from Web design/development and Android app design/development with a sprinkle of graphic designing! </p>
+  					<p><a href="#contact" class="btn btn-default btn-lg">Contact Me</a></p>
+  				</div>
+  			</div>
+
+  </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="white-section" id="contact">
+
+    <div class="contact-me-illustration" style="background-image: url(images/contact-me.png);">
 			<div class="overlay"></div>
 		</div>
-		<div class="choose animate-box">
+		<div class="contact-me ">
 			<h2>Contact</h2>
 			<form method="POST" data-netlify="true">
 				<div class="row form-group">
@@ -451,40 +507,34 @@
 
 			</form>
 		</div>
-	</div>
 
-	<div id="portfolio-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>&copy; 2020 Sujal Ratna Tamrakar <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> <br> Avatar from <a href="all-free-download.com">all-free-download</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+  </section>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
+  <!-- FOOTER SECTION -->
+   <section id="footer">
+     <div class="container">
+ 			<div class="row">
+ 				<div class="col-md-12 text-center">
+ 					<p>&copy; 2020 Sujal Ratna Tamrakar <br>Taken inspiration from <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> <br> Avatar from <a href="all-free-download.com">all-free-download</a></p>
+ 				</div>
+ 			</div>
+ 		</div>
+   </section>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+   </div>
 
-	<!-- Main -->
-	<script src="js/main.js"></script>
 
-	</body>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Easy pieChart -->
+  <script src="js/jquery.easypiechart.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
