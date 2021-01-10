@@ -2,12 +2,10 @@
 > A Responsive HTML5 Bootstrap Template
 > DESIGNED & DEVELOPED by inspiration from FreeHTML5.co
 
-> https://sujalratnatamrakar.github.io/
-
 ### Website Preview
 <p align="center">
   <kbd>
-    <a href="https://sujalratnatamrakar.github.io/" target="_blank">Preview
+    <a href="https://sujalratnatamrakar.com.np/" target="_blank">Preview
   </kbd>
 </p>
 
@@ -61,4 +59,4 @@ http://underscorejs.org/
 ✔️ Hire Me!\
 ✔️ Contact
 
-To view a live example, **[click here](https://sujalratnatamrakar.github.io/)**
+
