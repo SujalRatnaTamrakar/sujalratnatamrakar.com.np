@@ -121,7 +121,7 @@ align-items: center;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    margin-left: 15px;
+    margin-left: 0px;
     z-index: 1;
 }
 
@@ -130,6 +130,11 @@ align-items: center;
   position: absolute;
   right: -50%;
   top: 0;
+}
+
+.force-break{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Home section */
@@ -393,7 +398,8 @@ align-items: center;
 
 /* PORTFOLIO-HEADER */
 .landing-row{
-  margin-right: 0px;
+  margin-right: 0;
+  margin-left: 0;
 }
 #portfolio-header,
 .portfolio-cover {
@@ -896,7 +902,7 @@ align-items: center;
   color: #fff !important;
 }
 
-#services h1,h2,h3{
+#services h2{
   margin-bottom: 2em;
 }
 
