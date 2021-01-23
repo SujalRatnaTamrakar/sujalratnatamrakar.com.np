@@ -29,16 +29,33 @@ let app_data = [],
   weekly_deaths_list = [],
   dropdownItems,
   selected,
-  countryName="";
+  country_code="",
+  user_country="",
+  countryName=""
+  countryFlag="";
 
 // GET USERS COUNTRY CODE
-let country_code = geoplugin_countryCode();
-let user_country;
-country_list.forEach((country) => {
-  if (country.code == country_code) {
-    user_country = country.name;
-  }
-});
+// let country_code = geoplugin_countryCode();
+// let user_country;
+// country_list.forEach((country) => {
+//   if (country.code == country_code) {
+//     user_country = country.name;
+//   }
+// });
+_ipgeolocation.enableSessionStorage(true);
+_ipgeolocation.makeAsyncCallsToAPI(false);
+_ipgeolocation.getGeolocation(handleResponse, "b8e0f1ef2893413dbdf023aed4f73ec8");
+function handleResponse(response) {
+    country_code=response.country_code2;
+    countryFlag=response.country_flag;
+    country_list.forEach((country) => {
+      if (country.code == country_code) {
+        user_country = response.country_name;
+      }
+    });
+}
+
+
 
 // Which_li_selected
 dropdownItems = document.querySelectorAll(".dropdown-menu li");
@@ -79,6 +96,7 @@ function fetchData(country) {
     (deaths_list = []),
     (dates = []),
     (formatedDates = []);
+
 
   var requestOptions = {
     method: "GET",
@@ -324,7 +342,7 @@ function updateStats() {
 
     const total_deaths = deaths_list.reduce((a, b) => a + b, 0);
     const new_deaths_cases = Math.abs(deaths_list[deaths_list.length - 1] - deaths_list[deaths_list.length - 2]);
-    country_name_element.innerHTML = user_country;
+    country_name_element.innerHTML = '<img src="'+countryFlag+'"/>'+user_country;
     total_cases_element.innerHTML = total_cases;
     new_cases_element.innerHTML = `+${new_confirmed_cases}`;
     recovered_element.innerHTML = total_recovered;
