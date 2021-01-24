@@ -93,7 +93,7 @@ observer.observe(country_name_element, {characterData: false, childList: true, a
 function fetchData(country) {
   user_country = country;
   country_name_element.innerHTML = "Loading...";
-
+  button.innerHTML="Total";
   (cases_list = []),
     (recovered_list = []),
     (deaths_list = []),
@@ -163,6 +163,7 @@ function fetchDataTotal() {
   user_country = countryName;
   country_name_element.innerHTML = "Loading...";
 
+
   (cases_list = []),
     (recovered_list = []),
     (deaths_list = []),
@@ -231,6 +232,7 @@ function fetchDataWeek() {
   countryName = country_name_element.innerHTML;
   user_country = countryName;
   country_name_element.innerHTML = "Loading...";
+
 
   (cases_list = []),
     (recovered_list = []),
