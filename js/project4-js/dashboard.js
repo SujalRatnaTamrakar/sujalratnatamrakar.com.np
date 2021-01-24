@@ -16,7 +16,12 @@ const button = document.getElementById("time_button");
 const ctx = document.getElementById("axes_line_chart").getContext("2d");
 let today = new Date();
 let current = new Date();
-var firstDayOfWeek = new Date(current.setDate(current.getDate() - current.getDay()-1));
+if(today.getDay()==0){
+  var firstDayOfWeek = new Date(current.setDate(current.getDate() - 7));
+  console.log(firstDayOfWeek);
+}else{
+  var firstDayOfWeek = new Date(current.setDate(current.getDate() - current.getDay()-1));
+};
 // APP VARIABLES
 let app_data = [],
   cases_list = [],
@@ -31,8 +36,7 @@ let app_data = [],
   selected,
   country_code="",
   user_country="",
-  countryName=""
-  countryFlag="";
+  countryName="";
 
 // GET USERS COUNTRY CODE
 // let country_code = geoplugin_countryCode();
@@ -47,7 +51,6 @@ _ipgeolocation.makeAsyncCallsToAPI(false);
 _ipgeolocation.getGeolocation(handleResponse, "b8e0f1ef2893413dbdf023aed4f73ec8");
 function handleResponse(response) {
     country_code=response.country_code2;
-    countryFlag=response.country_flag;
     country_list.forEach((country) => {
       if (country.code == country_code) {
         user_country = response.country_name;
@@ -342,7 +345,7 @@ function updateStats() {
 
     const total_deaths = deaths_list.reduce((a, b) => a + b, 0);
     const new_deaths_cases = Math.abs(deaths_list[deaths_list.length - 1] - deaths_list[deaths_list.length - 2]);
-    country_name_element.innerHTML = '<img src="'+countryFlag+'"/>'+user_country;
+    country_name_element.innerHTML = user_country;
     total_cases_element.innerHTML = total_cases;
     new_cases_element.innerHTML = `+${new_confirmed_cases}`;
     recovered_element.innerHTML = total_recovered;
