@@ -15,10 +15,11 @@ const button = document.getElementById("time_button");
 
 const ctx = document.getElementById("axes_line_chart").getContext("2d");
 let today = new Date();
+let yesterday = new Date(today.setDate(today.getDate() - 1));
+console.log(yesterday);
 let current = new Date();
 if(today.getDay()==0){
   var firstDayOfWeek = new Date(current.setDate(current.getDate() - 7));
-  console.log(firstDayOfWeek);
 }else{
   var firstDayOfWeek = new Date(current.setDate(current.getDate() - current.getDay()-1));
 };
@@ -251,7 +252,7 @@ function fetchDataWeek() {
         countryName +
         "/status/confirmed?from="+
         firstDayOfWeek.getFullYear()+"-"+(firstDayOfWeek.getMonth()+1)+"-"+firstDayOfWeek.getDate()+"T00:00:00Z&to="+
-        today.getFullYear()+"-"+(today.getMonth()+1)+"-"+(today.getDate()-1)+"T00:00:00Z",
+        yesterday.getFullYear()+"-"+(yesterday.getMonth()+1)+"-"+(yesterday.getDate())+"T00:00:00Z",
       requestOptions
     )
       .then((res) => {
@@ -272,7 +273,7 @@ function fetchDataWeek() {
         countryName +
         "/status/recovered?from="+
         firstDayOfWeek.getFullYear()+"-"+(firstDayOfWeek.getMonth()+1)+"-"+firstDayOfWeek.getDate()+"T00:00:00Z&to="+
-        today.getFullYear()+"-"+(today.getMonth()+1)+"-"+(today.getDate()-1)+"T00:00:00Z",
+        yesterday.getFullYear()+"-"+(yesterday.getMonth()+1)+"-"+(yesterday.getDate())+"T00:00:00Z",
       requestOptions
     )
       .then((res) => {
@@ -292,7 +293,7 @@ function fetchDataWeek() {
       countryName +
       "/status/deaths?from="+
       firstDayOfWeek.getFullYear()+"-"+(firstDayOfWeek.getMonth()+1)+"-"+firstDayOfWeek.getDate()+"T00:00:00Z&to="+
-      today.getFullYear()+"-"+(today.getMonth()+1)+"-"+(today.getDate()-1)+"T00:00:00Z",
+      yesterday.getFullYear()+"-"+(yesterday.getMonth()+1)+"-"+(yesterday.getDate())+"T00:00:00Z",
       requestOptions
     )
       .then((res) => {
