@@ -1311,3 +1311,43 @@ input[type="text"] {
 .form-group {
   margin-bottom: 30px;
 }
+
+/* Floating Icons */
+.floating-icons {
+  position: fixed;
+  right: 25px;
+  top: 90%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Gap between icons */
+  z-index: 1000; /* Ensure the icons are on top of other content */
+}
+
+.icon-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-button img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+/* Specific Icon Colors */
+.resume-button img {
+  filter: none; /* Keep the original color for WhatsApp */
+}
